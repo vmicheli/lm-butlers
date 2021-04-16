@@ -1,0 +1,19 @@
+tokenizer_path: 'gpt2-medium'
+model_path: 'gpt2-medium'
+data_path: 'data/demonstrations.txt'
+max_seq_length: 1000
+training_args:
+  per_device_train_batch_size: 1
+  per_device_eval_batch_size: 1
+  output_dir: 'experiments/gpt_medium_all_episodes_action_modeling'
+  num_train_epochs: 10
+  gradient_accumulation_steps: 8
+  save_total_limit: 1
+  lr_scheduler_type: 'linear'
+  do_eval: False
+  save_steps: 4440
+  logging_steps: 40
+  report_to: ['wandb']
+  group_by_length: True
+  learning_rate: 0.00005
+  seed: 42
