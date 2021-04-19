@@ -1,6 +1,6 @@
 # Language Models are Few-Shot Butlers
 
-This repository contains the code to reproduce the experiments in Language Models are Few-Shot Butlers.
+This repository contains the code to reproduce the experiments in [Language Models are Few-Shot Butlers](https://arxiv.org/abs/2104.07972).
 
 ## Installation
 
