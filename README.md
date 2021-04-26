@@ -13,3 +13,7 @@ Training a GPT-2 medium (345M parameters) model with action modeling on expert d
 ## Evaluation
 
 Evaluating the resulting model on out-of-distribution task instances: `python src/alfworld_trainer.py configs/alfworld_trainer_eval_config.yaml`
+
+## Models
+
+Trained models are hosted on the [Hugging Face hub](https://huggingface.co/vmicheli/lm-butlers-gpt). For instance, set `model_path` to `vmicheli/lm-butlers-gpt` in `alfworld_trainer_eval_config.yaml` to skip the Action modeling step.
